@@ -1,42 +1,12 @@
-一個輸入表單可以輸入網址以及選擇要
-
-1. only 影片
-2. only 音樂
-3. 影片＋音樂
-
-按下按鈕或是 ENTER 後送出
-
-（如果網址無效會有紅字）
-
-會發出
-POST /api/download
+# Youtube 下載工具
 
 ```
-POST
-Request Body:
-{
-    "url": "bHLpxwhELEs",
-    "type": "a" # type = a | v | av
-}
-```
+# 下載 yt-dlp
+sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp  # Make executable
+sudo yt-dlp -U
 
----
-
-```
-bestVideoAndAudioCombinedFormat := "bv+ba/b"
-// bestVideoAndAudioFormat := "bv,ba"
-bestVideoFormat:= "bv"
-bestAudioFormat:= "ba"
-
-output, err := exec.Command("yt-dlp", "-f", format, "https://www.youtube.com/watch?v=" + video_id).Output()
-if err != nil {
-    // log.Fatal(err)
-} else {
-    fmt.Printf("%s\n", output)
-}
-
-```
-
-```
-sudo -u postgres psql
+# 下載 ffmpeg
+sudo apt update
+sudo apt install ffmpeg
 ```
