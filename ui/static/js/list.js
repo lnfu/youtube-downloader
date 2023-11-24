@@ -165,7 +165,7 @@ loop();
 
 
 function getYouTubeVideoId(url) {
-    const regex = /^https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_]+)$/;
+    const regex = /^https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)$/;
     const match = regex.exec(url);
     return match ? match[1] : null;
 }
