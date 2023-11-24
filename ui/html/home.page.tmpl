@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset='utf-8'>
+        <title>YouTube 影音下載工具</title>
+        <link rel='stylesheet' href='/static/css/style.css'>
+    </head>
+    <body>
+        <header>
+            <h1><a href='/'>YouTube 影音下載工具</a></h1>
+        </header>
+
+        <main>
+
+            <section>
+                <form id="form" action="/submit">
+                    <input type="url" name="url" id="">
+                    <select name="type" id="">
+                        <option value="video">影片</option>
+                        <option value="audio">音樂</option>
+                    </select>
+                    <button type="submit">獲取</button>
+                </form>
+            </section>
+
+            <br>
+
+            <section>
+                <h2>下載列表</h2>
+                <table id="list">
+                    <tr>
+                        <th>編號</th>
+                        <th>名稱</th>
+                        <th>類型</th>
+                        <th>時長</th>
+                        <th>狀態</th>
+                        <th>下載</th>
+                    </tr>
+                    <!-- <tr>
+                        <td align=center>1</td>
+                        <td>【#賀瓏夜夜秀】高嘉瑜 唱歌是為了認知作戰</td>
+                        <td align=center>處理中</td>
+                        <td align=center><button>下載</button></td>
+                    </tr>
+                    <tr>
+                        <td align=center>2</td>
+                        <td>救命啊啊啊！救命啊啊啊啊啊！！！開箱一大堆非洲象牙海岸零食【腦波弱開箱】EP134</td>
+                        <td align=center>處理中</td>
+                        <td align=center><button>下載</button></td>
+                    </tr>
+                    <tr>
+                        <td align=center>3</td>
+                        <td>2023 TCSA 台灣企業永續獎 頒獎典禮 Highlight & TCSA獲獎榜單影片</td>
+                        <td align=center>處理中</td>
+                        <td align=center><button>下載</button></td>
+                    </tr> -->
+                </table>
+            </section>
+
+        </main>
+
+
+        <script type="text/javascript" src="/static/js/list.js"></script>
+
+    </body>
+</html>

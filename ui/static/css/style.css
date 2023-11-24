@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+header {
+    padding: 40px;
+    background-color:teal;
+    color: whitesmoke;
+}
+
+main {
+    padding-top: 50px;
+    max-width: 1040px;
+    margin: 0 auto;
+    color: #333;
+}
+
+table {
+    width: 100%;
+}
+
+button {
+    padding: 1px 6px;
+    cursor: pointer;
+}
+
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+}
+
+form input[type="url"] {
+    padding: 10px;
+    font-size: x-large;
+    width: 80%;
+}
+
+form select,
+form button {
+    margin-left: 5px;
+    font-size: x-large;
+    text-align: center;
+    width: 10%;
+}
+
+
+/* form select, form button {
+    box-sizing: border-box;
+    font-size: x-large;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+input[type="url"] {
+    font-size: xx-large;
+    padding: 0px 20px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-right: 10px;
+    /* Optional: add some spacing between the input and the select element */
